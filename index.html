@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GadgetHive - Best Gadgets & Tech Reviews 2026</title>
+    <meta name="description" content="Discover the best gadgets, tech accessories, and smart devices. Expert reviews and affiliate recommendations for power banks, wireless chargers, speakers, and more.">
+    <style>
+        :root {
+            --base: #1a0f00;
+            --base-light: #2d1a00;
+            --base-lighter: #3d2400;
+            --accent: #f59e0b;
+            --accent-light: #fbbf24;
+            --text: #f5f5f4;
+            --text-muted: #a8a29e;
+            --border: #44403c;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--base);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        header {
+            background: var(--base-light);
+            border-bottom: 2px solid var(--accent);
+            padding: 1rem 2rem;
+        }
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--accent);
+            text-decoration: none;
+        }
+        .logo span { color: var(--text); }
+        .nav-links { display: flex; gap: 1.5rem; list-style: none; }
+        .nav-links a {
+            color: var(--text);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover { color: var(--accent); }
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .hero {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: linear-gradient(135deg, var(--base-light), var(--base-lighter));
+            border-radius: 12px;
+            margin-bottom: 3rem;
+            border: 1px solid var(--border);
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--accent);
+        }
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+        .featured-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .card {
+            background: var(--base-light);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent);
+        }
+        .card h3 { color: var(--accent); margin-bottom: 0.5rem; }
+        .card p { color: var(--text-muted); margin-bottom: 1rem; }
+        .card a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .card a:hover { text-decoration: underline; }
+        .badge {
+            display: inline-block;
+            background: var(--accent);
+            color: var(--base);
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        .disclaimer {
+            background: var(--base-lighter);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-top: 3rem;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+        .disclaimer strong { color: var(--accent); }
+        footer {
+            background: var(--base-light);
+            border-top: 1px solid var(--border);
+            padding: 2rem;
+            text-align: center;
+            margin-top: 4rem;
+        }
+        footer p { color: var(--text-muted); font-size: 0.9rem; }
+        footer a { color: var(--accent); text-decoration: none; }
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 1.8rem; }
+            .nav-links { gap: 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Gadget<span>Hive</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog/">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Your Ultimate Gadget Guide</h1>
+            <p>Expert reviews and curated recommendations for the best tech gadgets, accessories, and smart devices in 2026.</p>
+            <a href="blog/" class="badge">Browse All Reviews</a>
+        </section>
+
+        <h2 style="margin-bottom: 1rem; color: var(--accent);">Latest Reviews</h2>
+        <div class="featured-grid">
+            <div class="card">
+                <span class="badge">2026 Pick</span>
+                <h3>Best Power Banks 2026</h3>
+                <p>Never run out of battery again. Our top picks for portable chargers with fast charging and massive capacity.</p>
+                <a href="blog/best-power-banks-2026.html">Read Review →</a>
+            </div>
+            <div class="card">
+                <span class="badge">Editor's Choice</span>
+                <h3>Best Wireless Chargers</h3>
+                <p>Cut the cord with these fast, reliable wireless charging pads and stands for all your devices.</p>
+                <a href="blog/best-wireless-chargers.html">Read Review →</a>
+            </div>
+            <div class="card">
+                <span class="badge">Top Rated</span>
+                <h3>Best Bluetooth Speakers</h3>
+                <p>Portable audio perfection. Discover speakers with incredible sound quality and battery life.</p>
+                <a href="blog/best-bluetooth-speakers.html">Read Review →</a>
+            </div>
+            <div class="card">
+                <span class="badge">Streaming</span>
+                <h3>Best Webcam for Streaming 2026</h3>
+                <p>Level up your直播 with crystal-clear 4K webcams perfect for content creators and streamers.</p>
+                <a href="blog/best-webcam-streaming-2026.html">Read Review →</a>
+            </div>
+            <div class="card">
+                <span class="badge">Productivity</span>
+                <h3>Best Desk Accessories for Home Office</h3>
+                <p>Transform your workspace with these essential desk gadgets and organizational tools.</p>
+                <a href="blog/best-desk-accessories.html">Read Review →</a>
+            </div>
+            <div class="card">
+                <span class="badge">Budget</span>
+                <h3>Best Travel Gadgets Under $50</h3>
+                <p>Smart travel gear that won't break the bank. Essential gadgets for every traveler.</p>
+                <a href="blog/best-travel-gadgets-under-50.html">Read Review →</a>
+            </div>
+        </div>
+
+        <div class="disclaimer">
+            <strong>Affiliate Disclosure:</strong> GadgetHive is a participant in the Amazon Services LLC Associates Program and other affiliate advertising programs. This means we may earn a commission when you click on our links and make a purchase, at no additional cost to you. Our reviews are based on thorough research and genuine recommendations. Prices and availability are subject to change.
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2026 GadgetHive. All rights reserved. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+        <p style="margin-top: 0.5rem;"><small>As an affiliate, we may earn from qualifying purchases.</small></p>
+    </footer>
+</body>
+</html>

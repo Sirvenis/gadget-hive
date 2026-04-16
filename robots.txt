@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://sirvenis.github.io/gadget-hive/sitemap.xml
+
+# Allow all search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Disallow admin or private directories if any
+Disallow: /private/
+Disallow: /admin/
+
+# Crawl delay (optional, for polite crawling)
+Crawl-delay: 10
